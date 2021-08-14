@@ -1,0 +1,176 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: #4d515d;
+}
+
+.logincard {
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-top: 52px;
+    max-width: 1050px;
+
+    &__left {
+        width: 650px;
+        padding: 88px 60px 0;
+        border-radius: 4px 0 0 4px;
+        background-color: #ffffff;
+    }
+
+    &__right {
+        .logincard-img {
+            display: block;
+        }
+    }
+}
+
+// End of main container
+
+.topcard {
+    &__title {
+        margin: 0;
+        font-size: 40px;
+        font-weight: 300;
+        color: #1e1e1e;
+        line-height: 47px;
+        font-style: normal;
+        margin-bottom: 20px;
+        font-family: "Roboto", "Arial", sans-serif;
+    }
+
+    &__dfn {
+        margin: 0;
+        font-size: 13px;
+        margin-top: 2px;
+        font-weight: 500;
+        color: #aaaaaa;
+        line-height: 15px;
+        font-style: normal;
+        font-family: "Roboto", "Arial", sans-serif;
+    }
+
+}
+
+// End of topcard
+
+.middlecard {
+    margin: 0;
+    margin-top: 60px;
+
+    &__link {
+        padding: 20px;
+        display: block;
+        max-width: 530px;
+        max-height: 59px;
+        color: #8b8b8c;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 4px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: 1px solid #eef0f3;
+        font-family: "Roboto", "Arial", sans-serif;
+    }
+
+    &__link:nth-child(even) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__link:hover {
+        cursor: pointer;
+        transition: 0.8s;
+        color: #1e1e1e;
+        box-shadow: 1px 0px 22px -3px rgba(34, 60, 80, 0.17);
+    }
+
+
+    a:first-child::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateX(-145px);
+        background-image: url(./../img/g+.svg);
+    }
+
+    a:nth-child(2)::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateX(-145px);
+        background-image: url(./../img/fb.svg);
+    }
+
+    a:last-child::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        background-position: center;
+        background-repeat: no-repeat;
+        transform: translateX(-145px);
+        background-image: url(./../img/tw.svg);
+    }
+
+
+    &__hr {
+        margin: 0;
+        width: 648px;
+        margin-top: 82px;
+        position: absolute;
+        transform: translateX(-60px);
+        border: 1px solid #f1f1f1;
+    }
+}
+
+// End of middle card
+
+.bottomcard {
+    display: flex;
+    padding: 40px 0;
+    transform: translateY(75px);
+    justify-content: space-between;
+
+    &__dfn-left {
+        margin: 0;
+        padding: 0;
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 15px;
+        font-style: normal;
+        font-family: "Roboto", "Arial", sans-serif;
+    }
+
+    &__dfn-right {
+        margin: 0;
+        padding: 0;
+        font-size: 11px;
+        font-weight: 900;
+        color: #8b8b8c;
+        line-height: 13px;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-family: "Roboto", "Arial", sans-serif;
+
+    }
+}
+.bottomcard__dfn-right:hover {
+    color: #000000;
+}
